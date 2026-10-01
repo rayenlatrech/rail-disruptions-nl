@@ -1,0 +1,13 @@
+# Python environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data: re-created by src/download.py, so it is not committed
+data/
+
+# Local settings and secrets
+.env
+.vscode/
