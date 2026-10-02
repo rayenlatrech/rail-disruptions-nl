@@ -4,7 +4,7 @@ Predicting, at the moment a disruption on the Dutch rail network is announced,
 whether it will turn into a long one. Built on seven years (2019–2025) of
 disruption records from [Rijden de Treinen](https://www.rijdendetreinen.nl/en/open-data/disruptions).
 
-> **Status:** work in progress. Setup is done; analysis is starting.
+> **Status:** work in progress. Data cleaning is done (notebook 01); EDA is next.
 
 ## The question
 
@@ -46,6 +46,10 @@ Known caveats, from the source:
 The data is not stored in this repository. To download it, run
 `python src/download.py`.
 
+After cleaning, **37,777 disruptions** remain: 111 rows without a duration and 683 zero-length
+messages were removed. Every issue found and the decision taken is listed in
+[`docs/data_quality_log.md`](docs/data_quality_log.md).
+
 ## Approach (planned)
 
 - **Time-based split:** train on 2019–2023, validate on 2024, and test on 2025.
@@ -68,6 +72,8 @@ rail-disruptions-nl/
 │   ├── 02_eda.ipynb
 │   ├── 03_features.ipynb
 │   └── 04_models.ipynb
+├── docs/
+│   └── data_quality_log.md
 ├── reports/figures/
 ├── src/
 │   └── download.py
