@@ -4,7 +4,8 @@ Predicting, at the moment a disruption on the Dutch rail network is announced,
 whether it will turn into a long one. Built on seven years (2019–2025) of
 disruption records from [Rijden de Treinen](https://www.rijdendetreinen.nl/en/open-data/disruptions).
 
-> **Status:** work in progress. Data cleaning is done (notebook 01); EDA is next.
+> **Status:** work in progress. Data cleaning (notebook 01) and exploratory analysis (notebook 02) are done;
+> feature engineering is next.
 
 ## The question
 
