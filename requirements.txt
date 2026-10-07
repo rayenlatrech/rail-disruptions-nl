@@ -1,9 +1,7 @@
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-lightgbm
-duckdb
-pyarrow
-ipykernel
+pandas==3.0.6
+numpy==2.5.3
+pyarrow==25.0.1
+matplotlib==3.11.2
+scikit-learn==1.9.1
+lightgbm==4.7.0
+ipykernel==7.4.0
